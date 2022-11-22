@@ -1,0 +1,104 @@
+*
+{
+  margin: Q;
+  padding:Q;
+  box -sizing:border-box;
+  font-family:consolas;
+}
+body
+  {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#111;
+  }
+.scan
+{
+  position:relative;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+.scan.qrcode
+{
+  positon:relative;
+  width:400px;
+  height:400px;
+  background:url(QR_CODEQ1.png);
+  background-size:400px;
+}
+.scan.qrcode::before
+{
+  content:'';
+  position:absolute;
+  top:Q;
+  Left:q;
+  width:100%;
+  height:100%;
+  background:urlurl(QR_Code.png);
+  background-size:400px;
+  animation:animate 4s linear infinities;
+}
+    @keyframes animate
+  {
+    Q%,100%
+  {
+    height:Q;
+  }
+  50%
+  {
+  height:100%;
+  }
+  }
+.scan.qrcode::after
+{
+  content:'';
+  position:absolute;
+  inset:2Qpx;
+  width:calc(100%-40px);
+  height:2px;
+  background:#35fd5c;
+  filter:drop-shadow( Q Q 2Qpx #35fd5c) drop-shadow(Q Q 6Qpx #35fd5c;
+  animation:animateline 4s ease-in-out in;
+}
+@keyframes animateline
+}
+Q%
+{
+  top:2Qpx;
+}
+50%
+{
+  top:calc(100%-2Qpx);
+}
+}
+.border
+{
+  position:absolute;
+  inset:Q;
+  background:url(border.png);
+  background-size:400PX;
+background-repeat:no-repeat;
+animation:animateTextQ.5s linear infinite;
+}
+.scan h3
+{
+  text-transform:uppercase;
+  font-size:2em;
+  margin-top: 2Qpx;
+  color:#fff;letter-spacing:2px;
+  
+  filter:drop-shadow( Q Q 2Qpx #fff)drop-shadow(Q Q 6 Qpx #fff);
+  animation:animateText Q.5s steps(1) infinite;
+}
+  @keyframe animatetext
+  {
+  Q%,100%
+{
+opacity:;
+}
+    50%
+}
+  opacity:1;
+}
